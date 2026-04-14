@@ -12,6 +12,7 @@ It demonstrates the ability to design scalable, maintainable, and production-ori
 * ✅ API testing with reusable service layer
 * ✅ Page Object Model (POM) for UI abstraction
 * ✅ Clean separation between UI and API test suites
+* ✅ CI/CD integration with GitHub Actions
 * ✅ Structured and scalable project architecture
 
 ## 🧰 Tech Stack
@@ -20,6 +21,9 @@ It demonstrates the ability to design scalable, maintainable, and production-ori
 * Testing Scope:
   * UI (E2E Testing)
   * API Testing
+ 
+## CI/CD: 
+* GitHub Actions
 
 ### Design Patterns:
 * Page Object Model (POM)
@@ -51,6 +55,7 @@ All UI interactions are encapsulated into dedicated classes:
 * BasePage
 
 ✔ Improves readability, reusability, and maintenance
+
 ✔ Keeps tests clean and focused on behavior
 
 ## 🔸 API Service Layer
@@ -60,7 +65,23 @@ All HTTP requests are handled through a centralized service:
 * BookingService
 
 ✔ Separates test logic from API implementation
+
 ✔ Enables reusable and maintainable API interactions
+
+## 🔄 CI/CD Integration
+
+This project includes a GitHub Actions pipeline that:
+
+* Installs dependencies
+* Installs Playwright browsers
+* Executes all test suites (UI + API)
+* Generates test reports
+
+✔ Ensures code quality on every push
+
+✔ Enables automated regression testing
+
+✔ Simulates real-world team workflows
 
 ## ▶️ Getting Started
 ### Install dependencies
@@ -82,12 +103,12 @@ npx playwright show-report
 
 ✔ Includes execution traces, logs, and failure insights
 
-## 📈 Continuous Improvement
+💡 Why This Project Matters
 
-This framework is intentionally designed to evolve. Planned improvements include:
+This project reflects practical, job-ready skills:
 
-* 🔹 Stronger TypeScript typing (models/interfaces)
-* 🔹 Test data factories for better scalability
-* 🔹 Custom Playwright fixtures (test.extend)
-* 🔹 More robust locator strategies (data-testid)
-* 🔹 CI/CD integration (GitHub Actions)
+* Designing automation frameworks (not just writing tests)
+* Handling both UI and API validation layers
+* Applying clean architecture and separation of concerns
+* Integrating automation into CI/CD pipelines
+* Writing maintainable and scalable test code
